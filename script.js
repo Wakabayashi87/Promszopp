@@ -30,7 +30,7 @@ const shops = [...new Set(promos.map(p => p.shop))].sort();
 const promoGrid = document.getElementById('promoGrid');
 const shopNav   = document.getElementById('shopNav');
 
-// aktualna data
+// data
 document.getElementById('today').textContent =
   new Date().toLocaleDateString('pl-PL', {day:'numeric', month:'long', year:'numeric'});
 document.getElementById('lastUpdate').textContent =
@@ -56,8 +56,8 @@ shopNav.appendChild(allBtn);
 function render() {
   const hash = location.hash.slice(1) || 'all';
   const list = hash === 'all' ? promos : promos.filter(p => p.shop.toLowerCase() === hash);
-  promoGrid.innerHTML = '';
 
+  promoGrid.innerHTML = '';
   list.forEach(p => {
     const card = document.createElement('div');
     card.className = 'col-6 col-md-4 col-lg-3';
@@ -72,8 +72,10 @@ function render() {
       </div>`;
     promoGrid.appendChild(card);
   });
+
+  // odśwież licznik
+  document.getElementById('count').textContent = list.length;
 }
 
-// uruchom przy starcie i przy zmianie hasha
 window.addEventListener('hashchange', render);
 render();
