@@ -26,56 +26,63 @@ const promos = [
   {shop:'Dino', product:'Ser feta 150 g', price:3.79, discount:-26}
 ];
 
-const shops = [...new Set(promos.map(p => p.shop))].sort();
-const promoGrid = document.getElementById('promoGrid');
-const shopNav   = document.getElementById('shopNav');
+let shops, promoGrid, shopNav, countSpan, todaySpan, lastUpdateSpan;
 
-// data
-document.getElementById('today').textContent =
-  new Date().toLocaleDateString('pl-PL', {day:'numeric', month:'long', year:'numeric'});
-document.getElementById('lastUpdate').textContent =
-  new Date().toLocaleString('pl-PL');
+function initApp() {
+  shops = [...new Set(promos.map(p => p.shop))].sort();
+  promoGrid      = document.getElementById('promoGrid');
+  shopNav        = document.getElementById('shopNav');
+  countSpan      = document.getElementById('count');
+  todaySpan      = document.getElementById('today');
+  lastUpdateSpan = document.getElementById('lastUpdate');
 
-// przyciski sklepów
-shops.forEach(shop => {
-  const btn = document.createElement('a');
-  btn.className = 'btn btn-outline-light btn-sm';
-  btn.href = `#${shop.toLowerCase()}`;
-  btn.textContent = shop;
-  shopNav.appendChild(btn);
-});
+  // daty
+  todaySpan.textContent      = new Date().toLocaleDateString('pl-PL', {day:'numeric', month:'long', year:'numeric'});
+  lastUpdateSpan.textContent = new Date().toLocaleString('pl-PL');
 
-// przycisk „wszystkie”
-const allBtn = document.createElement('a');
-allBtn.className = 'btn btn-outline-light btn-sm';
-allBtn.href = '#all';
-allBtn.textContent = 'Wszystkie';
-shopNav.appendChild(allBtn);
-
-// router
-function render() {
-  const hash = location.hash.slice(1) || 'all';
-  const list = hash === 'all' ? promos : promos.filter(p => p.shop.toLowerCase() === hash);
-
-  promoGrid.innerHTML = '';
-  list.forEach(p => {
-    const card = document.createElement('div');
-    card.className = 'col-6 col-md-4 col-lg-3';
-    card.innerHTML = `
-      <div class="card card-promo h-100 shadow-sm">
-        <div class="card-body">
-          <h6 class="card-title">${p.product}</h6>
-          <p class="mb-1"><strong>${p.price.toFixed(2)} zł</strong></p>
-          <span class="badge bg-danger">${p.discount}%</span>
-          <span class="shop-badge ${p.shop.toLowerCase()} ms-1">${p.shop}</span>
-        </div>
-      </div>`;
-    promoGrid.appendChild(card);
+  // przyciski sklepów
+  shops.forEach(shop => {
+    const btn = document.createElement('a');
+    btn.className = 'btn btn-outline-light btn-sm';
+    btn.href = `#${shop.toLowerCase()}`;
+    btn.textContent = shop;
+    shopNav.appendChild(btn);
   });
 
-  // odśwież licznik
-  document.getElementById('count').textContent = list.length;
+  // przycisk „wszystkie”
+  const allBtn = document.createElement('a');
+  allBtn.className = 'btn btn-outline-light btn-sm';
+  allBtn.href = '#all';
+  allBtn.textContent = 'Wszystkie';
+  shopNav.appendChild(allBtn);
+
+  // router
+  function render() {
+    const hash = location.hash.slice(1) || 'all';
+    const list = hash === 'all' ? promos : promos.filter(p => p.shop.toLowerCase() === hash);
+
+    promoGrid.innerHTML = '';
+    list.forEach(p => {
+      const card = document.createElement('div');
+      card.className = 'col-6 col-md-4 col-lg-3';
+      card.innerHTML = `
+        <div class="card card-promo h-100 shadow-sm">
+          <div class="card-body">
+            <h6 class="card-title">${p.product}</h6>
+            <p class="mb-1"><strong>${p.price.toFixed(2)} zł</strong></p>
+            <span class="badge bg-danger">${p.discount}%</span>
+            <span class="shop-badge ${p.shop.toLowerCase()} ms-1">${p.shop}</span>
+          </div>
+        </div>`;
+      promoGrid.appendChild(card);
+    });
+
+    countSpan.textContent = list.length;
+  }
+
+  window.addEventListener('hashchange', render);
+  render();
 }
 
-window.addEventListener('hashchange', render);
-render();
+// uruchom dopiero gdy DOM jest gotowy
+document.addEventListener('DOMContentLoaded', initApp);
