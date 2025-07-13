@@ -1,15 +1,46 @@
+/* Ustawienia główne */
 :root {
   --accent:#ff5722;
   --bg:#f5f7fa;
 }
-body{background:var(--bg);font-family:'Segoe UI',sans-serif;}
-.card-promo{transition:transform .15s;}
-.card-promo:hover{transform:translateY(-3px);}
-.shop-badge{display:inline-block;font-size:.7em;padding:3px 6px;border-radius:4px;}
+body{
+  background:var(--bg);
+  font-family:'Segoe UI',sans-serif;
+}
+
+/* Karty promocji */
+.card-promo{
+  transition:transform .15s;
+}
+.card-promo:hover{
+  transform:translateY(-3px);
+}
+
+/* Odznaki sklepów */
+.shop-badge{
+  display:inline-block;
+  font-size:.7em;
+  padding:3px 6px;
+  border-radius:4px;
+}
 .biedronka{background:#ff6900;color:#fff;}
 .lidl{background:#0050aa;color:#fff;}
 .kaufland{background:#ffcc00;color:#000;}
 .aldi{background:#0066cc;color:#fff;}
 .netto{background:#ed1c24;color:#fff;}
 .dino{background:#00a651;color:#fff;}
-.section-header{background:#fff;border-left:4px solid var(--accent);padding:6px 10px;margin:20px 0 10px;font-weight:600;}
+
+/* Nagłówki sekcji */
+.section-header{
+  background:#fff;
+  border-left:4px solid var(--accent);
+  padding:6px 10px;
+  margin:20px 0 10px;
+  font-weight:600;
+}
+
+/* Nawigacja po sklepach – nowy fragment */
+#shopNav .btn{
+  font-size:0.85rem;
+  padding:0.35rem 0.6rem;
+}
