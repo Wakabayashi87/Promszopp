@@ -1,3 +1,4 @@
+// Dane promocji – 13 lipca 2025
 const promos = [
   {shop:'Biedronka', product:'Pierś z kurczaka 1 kg', price:9.99, discount:-33},
   {shop:'Lidl', product:'Czekolada Milka 100 g', price:2.99, discount:-40},
@@ -25,15 +26,15 @@ const promos = [
   {shop:'Dino', product:'Ser feta 150 g', price:3.79, discount:-26}
 ];
 
-// aktualna data
-const todaySpan = document.getElementById('today');
-todaySpan.textContent = new Date().toLocaleDateString('pl-PL', {day:'numeric', month:'long', year:'numeric'});
-document.getElementById('lastUpdate').textContent = new Date().toLocaleString('pl-PL');
-
-const shopNav = document.getElementById('shopNav');
-const promoGrid = document.getElementById('promoGrid');
-
 const shops = [...new Set(promos.map(p => p.shop))].sort();
+const promoGrid = document.getElementById('promoGrid');
+const shopNav   = document.getElementById('shopNav');
+
+// aktualna data
+document.getElementById('today').textContent =
+  new Date().toLocaleDateString('pl-PL', {day:'numeric', month:'long', year:'numeric'});
+document.getElementById('lastUpdate').textContent =
+  new Date().toLocaleString('pl-PL');
 
 // przyciski sklepów
 shops.forEach(shop => {
@@ -44,31 +45,35 @@ shops.forEach(shop => {
   shopNav.appendChild(btn);
 });
 
-// sekcje promocji
-shops.forEach(shop => {
-  const section = document.createElement('section');
-  section.className = 'col-12';
-  section.id = shop.toLowerCase();
-  section.innerHTML = `<h3 class="mt-4">${shop}</h3>`;
+// przycisk „wszystkie”
+const allBtn = document.createElement('a');
+allBtn.className = 'btn btn-outline-light btn-sm';
+allBtn.href = '#all';
+allBtn.textContent = 'Wszystkie';
+shopNav.appendChild(allBtn);
 
-  const row = document.createElement('div');
-  row.className = 'row g-3';
+// router
+function render() {
+  const hash = location.hash.slice(1) || 'all';
+  const list = hash === 'all' ? promos : promos.filter(p => p.shop.toLowerCase() === hash);
+  promoGrid.innerHTML = '';
 
-  promos.filter(p => p.shop === shop).forEach(p => {
+  list.forEach(p => {
     const card = document.createElement('div');
     card.className = 'col-6 col-md-4 col-lg-3';
     card.innerHTML = `
-      <div class="card h-100 shadow-sm">
+      <div class="card card-promo h-100 shadow-sm">
         <div class="card-body">
           <h6 class="card-title">${p.product}</h6>
           <p class="mb-1"><strong>${p.price.toFixed(2)} zł</strong></p>
           <span class="badge bg-danger">${p.discount}%</span>
+          <span class="shop-badge ${p.shop.toLowerCase()} ms-1">${p.shop}</span>
         </div>
       </div>`;
-    row.appendChild(card);
+    promoGrid.appendChild(card);
   });
-  section.appendChild(row);
-  promoGrid.appendChild(section);
-});
+}
 
-document.getElementById('count').textContent = promos.length;
+// uruchom przy starcie i przy zmianie hasha
+window.addEventListener('hashchange', render);
+render();
