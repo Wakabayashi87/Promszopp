@@ -36,5 +36,7 @@ promos.extend([
     {"shop":"Dino","product":"Płatki owsiane 500 g","price":2.99,"discount":-30}
 ])
 
+print(f"Pobrano {len(promos)} promocji")
+
 with open("promos.json", "w", encoding="utf-8") as f:
     json.dump(promos, f, ensure_ascii=False, indent=2)
