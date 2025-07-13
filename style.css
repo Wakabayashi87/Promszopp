@@ -12,3 +12,4 @@ body{background:var(--bg);font-family:'Segoe UI',sans-serif}
 .aldi{background:#0066cc;color:#fff}
 .netto{background:#ed1c24;color:#fff}
 .dino{background:#00a651;color:#fff}
+.section-header{background:#fff;border-left:4px solid var(--accent);padding:6px 10px;margin:20px 0 10px;font-weight:600}
