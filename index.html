@@ -8,9 +8,10 @@
   <link href="style.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar navbar-dark" style="background-color:var(--accent)">
+  <nav class="navbar navbar-dark sticky-top" style="background-color:var(--accent)">
     <div class="container-fluid">
       <span class="navbar-brand mb-0 h1">🛒 Promoszop</span>
+      <div id="shopNav" class="d-none d-md-flex gap-2"></div>
     </div>
   </nav>
 
@@ -18,7 +19,7 @@
     <h2 class="text-center mb-3">Promocje <span id="today">--</span></h2>
 
     <div class="search-box mb-3">
-      <input id="search" class="form-control" placeholder="Szukaj produktu…">
+      <input id="search" class="form-control" placeholder="Szukaj produktu lub sklepu…">
     </div>
 
     <p class="text-center text-muted"><span id="count">--</span> promocji</p>
