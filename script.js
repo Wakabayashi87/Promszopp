@@ -58,7 +58,6 @@ search.addEventListener('input', ()=>{
   render(promos.filter(p=>p.product.toLowerCase().includes(v)));
 });
 
-// dynamiczna data
 const today = new Date().toLocaleDateString('pl-PL');
 document.getElementById('today').textContent = `(${today})`;
 document.getElementById('lastUpdate').textContent =
