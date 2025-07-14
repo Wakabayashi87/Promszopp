@@ -1,92 +1,362 @@
 [
   {
-    "shop": "Netto",
+    "shop": "Żabka",
     "product": "Mleko UHT 1 l",
-    "price": 3.45,
-    "discount": -19
+    "price": 7.46,
+    "discount": -42
   },
   {
-    "shop": "Żabka",
+    "shop": "Netto",
     "product": "Czekolada 100 g",
-    "price": 6.77,
-    "discount": -36
+    "price": 10.36,
+    "discount": -29
   },
   {
     "shop": "Kaufland",
     "product": "Jogurt 400 g",
-    "price": 9.52,
-    "discount": -24
+    "price": 2.05,
+    "discount": -20
   },
   {
     "shop": "Netto",
     "product": "Chleb 500 g",
-    "price": 8.84,
-    "discount": -19
-  },
-  {
-    "shop": "Dino",
-    "product": "Jajka 10 szt.",
-    "price": 8.89,
-    "discount": -33
+    "price": 10.89,
+    "discount": -18
   },
   {
     "shop": "Netto",
-    "product": "Masło 200 g",
-    "price": 8.17,
-    "discount": -42
+    "product": "Jajka 10 szt.",
+    "price": 1.96,
+    "discount": -19
   },
   {
     "shop": "Aldi",
+    "product": "Masło 200 g",
+    "price": 6.06,
+    "discount": -39
+  },
+  {
+    "shop": "Żabka",
     "product": "Pomidory 500 g",
-    "price": 10.15,
-    "discount": -27
-  },
-  {
-    "shop": "Netto",
-    "product": "Makaron 500 g",
-    "price": 10.07,
-    "discount": -19
-  },
-  {
-    "shop": "Biedronka",
-    "product": "Serek wiejski 150 g",
-    "price": 4.51,
-    "discount": -31
-  },
-  {
-    "shop": "Biedronka",
-    "product": "Płatki owsiane 500 g",
-    "price": 9.27,
-    "discount": -40
-  },
-  {
-    "shop": "Kaufland",
-    "product": "Ziemniaki 2 kg",
-    "price": 5.6,
-    "discount": -38
-  },
-  {
-    "shop": "Kaufland",
-    "product": "Banany 1 kg",
-    "price": 11.66,
-    "discount": -20
-  },
-  {
-    "shop": "Biedronka",
-    "product": "Ser żółty 200 g",
-    "price": 7.92,
-    "discount": -44
-  },
-  {
-    "shop": "Lidl",
-    "product": "Woda gazowana 1,5 l",
-    "price": 4.27,
+    "price": 11.25,
     "discount": -24
   },
   {
     "shop": "Biedronka",
+    "product": "Makaron 500 g",
+    "price": 2.74,
+    "discount": -15
+  },
+  {
+    "shop": "Żabka",
+    "product": "Serek wiejski 150 g",
+    "price": 3.16,
+    "discount": -22
+  },
+  {
+    "shop": "Netto",
+    "product": "Płatki owsiane 500 g",
+    "price": 2.98,
+    "discount": -31
+  },
+  {
+    "shop": "Biedronka",
+    "product": "Ziemniaki 2 kg",
+    "price": 3.35,
+    "discount": -18
+  },
+  {
+    "shop": "Dino",
+    "product": "Banany 1 kg",
+    "price": 5.83,
+    "discount": -23
+  },
+  {
+    "shop": "Lidl",
+    "product": "Ser żółty 200 g",
+    "price": 10.67,
+    "discount": -39
+  },
+  {
+    "shop": "Netto",
+    "product": "Woda 1,5 l",
+    "price": 5.77,
+    "discount": -29
+  },
+  {
+    "shop": "Biedronka",
     "product": "Herbata 50 g",
-    "price": 9.78,
+    "price": 6.57,
+    "discount": -36
+  },
+  {
+    "shop": "Netto",
+    "product": "Mąka 1 kg",
+    "price": 9.7,
+    "discount": -15
+  },
+  {
+    "shop": "Dino",
+    "product": "Olej roślinny 1 l",
+    "price": 4.5,
     "discount": -30
+  },
+  {
+    "shop": "Netto",
+    "product": "Cukier 1 kg",
+    "price": 8.45,
+    "discount": -24
+  },
+  {
+    "shop": "Żabka",
+    "product": "Ryż 1 kg",
+    "price": 3.23,
+    "discount": -41
+  },
+  {
+    "shop": "Dino",
+    "product": "Kawa 250 g",
+    "price": 2.25,
+    "discount": -38
+  },
+  {
+    "shop": "Dino",
+    "product": "Kiełbasa 250 g",
+    "price": 4.2,
+    "discount": -22
+  },
+  {
+    "shop": "Aldi",
+    "product": "Pierś z kurczaka 1 kg",
+    "price": 3.8,
+    "discount": -35
+  },
+  {
+    "shop": "Kaufland",
+    "product": "Ketchup 500 g",
+    "price": 10.33,
+    "discount": -45
+  },
+  {
+    "shop": "Kaufland",
+    "product": "Musztarda 250 g",
+    "price": 11.65,
+    "discount": -36
+  },
+  {
+    "shop": "Lidl",
+    "product": "Chipsy 150 g",
+    "price": 5.93,
+    "discount": -19
+  },
+  {
+    "shop": "Biedronka",
+    "product": "Ser feta 150 g",
+    "price": 11.28,
+    "discount": -45
+  },
+  {
+    "shop": "Żabka",
+    "product": "Jogurt naturalny 400 g",
+    "price": 9.07,
+    "discount": -37
+  },
+  {
+    "shop": "Dino",
+    "product": "Płatki kukurydziane 500 g",
+    "price": 7.11,
+    "discount": -26
+  },
+  {
+    "shop": "Biedronka",
+    "product": "Miód 250 g",
+    "price": 3.34,
+    "discount": -16
+  },
+  {
+    "shop": "Biedronka",
+    "product": "Czekolada gorzka 100 g",
+    "price": 6.37,
+    "discount": -22
+  },
+  {
+    "shop": "Biedronka",
+    "product": "Wafle ryżowe 100 g",
+    "price": 10.69,
+    "discount": -28
+  },
+  {
+    "shop": "Biedronka",
+    "product": "Pesto 190 g",
+    "price": 4.43,
+    "discount": -24
+  },
+  {
+    "shop": "Netto",
+    "product": "Mleko roślinne 1 l",
+    "price": 8.79,
+    "discount": -20
+  },
+  {
+    "shop": "Netto",
+    "product": "Pieczywo tostowe 500 g",
+    "price": 2.37,
+    "discount": -31
+  },
+  {
+    "shop": "Dino",
+    "product": "Kefir 400 g",
+    "price": 9.78,
+    "discount": -42
+  },
+  {
+    "shop": "Kaufland",
+    "product": "Twaróg 250 g",
+    "price": 10.7,
+    "discount": -37
+  },
+  {
+    "shop": "Biedronka",
+    "product": "Makaron świderki 500 g",
+    "price": 9.02,
+    "discount": -25
+  },
+  {
+    "shop": "Biedronka",
+    "product": "Pomidory koktajlowe 250 g",
+    "price": 9.09,
+    "discount": -42
+  },
+  {
+    "shop": "Lidl",
+    "product": "Ogórki kiszone 900 g",
+    "price": 8.95,
+    "discount": -21
+  },
+  {
+    "shop": "Dino",
+    "product": "Herbata zielona 50 g",
+    "price": 3.65,
+    "discount": -27
+  },
+  {
+    "shop": "Biedronka",
+    "product": "Mleko kokosowe 400 ml",
+    "price": 3.07,
+    "discount": -34
+  },
+  {
+    "shop": "Biedronka",
+    "product": "Kefir 400 g",
+    "price": 4.47,
+    "discount": -27
+  },
+  {
+    "shop": "Dino",
+    "product": "Sok pomarańczowy 1 l",
+    "price": 5.38,
+    "discount": -29
+  },
+  {
+    "shop": "Lidl",
+    "product": "Koncentrat pomidorowy 500 g",
+    "price": 8.52,
+    "discount": -37
+  },
+  {
+    "shop": "Biedronka",
+    "product": "Kasza gryczana 500 g",
+    "price": 3.59,
+    "discount": -34
+  },
+  {
+    "shop": "Kaufland",
+    "product": "Makaron spaghetti 500 g",
+    "price": 4.74,
+    "discount": -35
+  },
+  {
+    "shop": "Żabka",
+    "product": "Cukinia 1 szt.",
+    "price": 5.8,
+    "discount": -41
+  },
+  {
+    "shop": "Żabka",
+    "product": "Papryka czerwona 1 szt.",
+    "price": 4.35,
+    "discount": -24
+  },
+  {
+    "shop": "Aldi",
+    "product": "Cebula 1 kg",
+    "price": 4.27,
+    "discount": -44
+  },
+  {
+    "shop": "Żabka",
+    "product": "Ziemniaki 2 kg",
+    "price": 8.98,
+    "discount": -30
+  },
+  {
+    "shop": "Dino",
+    "product": "Chleb pszenny 500 g",
+    "price": 9.93,
+    "discount": -38
+  },
+  {
+    "shop": "Netto",
+    "product": "Ser mozzarella 125 g",
+    "price": 7.14,
+    "discount": -39
+  },
+  {
+    "shop": "Kaufland",
+    "product": "Mleko UHT 3,2% 1 l",
+    "price": 8.71,
+    "discount": -40
+  },
+  {
+    "shop": "Netto",
+    "product": "Jogurt grecki 400 g",
+    "price": 3.67,
+    "discount": -41
+  },
+  {
+    "shop": "Biedronka",
+    "product": "Masło 200 g",
+    "price": 8.76,
+    "discount": -32
+  },
+  {
+    "shop": "Netto",
+    "product": "Ser gouda 200 g",
+    "price": 7.17,
+    "discount": -24
+  },
+  {
+    "shop": "Kaufland",
+    "product": "Pomidory malinowe 500 g",
+    "price": 2.22,
+    "discount": -38
+  },
+  {
+    "shop": "Dino",
+    "product": "Cukier trzcinowy 1 kg",
+    "price": 3.52,
+    "discount": -45
+  },
+  {
+    "shop": "Biedronka",
+    "product": "Przyprawa gyros 50 g",
+    "price": 2.0,
+    "discount": -36
+  },
+  {
+    "shop": "Aldi",
+    "product": "Żel pod prysznic 250 ml",
+    "price": 9.22,
+    "discount": -16
   }
 ]
