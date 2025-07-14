@@ -1,1 +1,92 @@
-[]
+[
+  {
+    "shop": "Netto",
+    "product": "Mleko UHT 1 l",
+    "price": 3.45,
+    "discount": -19
+  },
+  {
+    "shop": "Żabka",
+    "product": "Czekolada 100 g",
+    "price": 6.77,
+    "discount": -36
+  },
+  {
+    "shop": "Kaufland",
+    "product": "Jogurt 400 g",
+    "price": 9.52,
+    "discount": -24
+  },
+  {
+    "shop": "Netto",
+    "product": "Chleb 500 g",
+    "price": 8.84,
+    "discount": -19
+  },
+  {
+    "shop": "Dino",
+    "product": "Jajka 10 szt.",
+    "price": 8.89,
+    "discount": -33
+  },
+  {
+    "shop": "Netto",
+    "product": "Masło 200 g",
+    "price": 8.17,
+    "discount": -42
+  },
+  {
+    "shop": "Aldi",
+    "product": "Pomidory 500 g",
+    "price": 10.15,
+    "discount": -27
+  },
+  {
+    "shop": "Netto",
+    "product": "Makaron 500 g",
+    "price": 10.07,
+    "discount": -19
+  },
+  {
+    "shop": "Biedronka",
+    "product": "Serek wiejski 150 g",
+    "price": 4.51,
+    "discount": -31
+  },
+  {
+    "shop": "Biedronka",
+    "product": "Płatki owsiane 500 g",
+    "price": 9.27,
+    "discount": -40
+  },
+  {
+    "shop": "Kaufland",
+    "product": "Ziemniaki 2 kg",
+    "price": 5.6,
+    "discount": -38
+  },
+  {
+    "shop": "Kaufland",
+    "product": "Banany 1 kg",
+    "price": 11.66,
+    "discount": -20
+  },
+  {
+    "shop": "Biedronka",
+    "product": "Ser żółty 200 g",
+    "price": 7.92,
+    "discount": -44
+  },
+  {
+    "shop": "Lidl",
+    "product": "Woda gazowana 1,5 l",
+    "price": 4.27,
+    "discount": -24
+  },
+  {
+    "shop": "Biedronka",
+    "product": "Herbata 50 g",
+    "price": 9.78,
+    "discount": -30
+  }
+]
