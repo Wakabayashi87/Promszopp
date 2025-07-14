@@ -1,34 +1,23 @@
-import requests
-from bs4 import BeautifulSoup
-import json
+import requests, csv, json, datetime
 
+url = "https://raw.githubusercontent.com/kuba-moo/promos-demo/main/promos.csv"
 promos = []
 
-# Adres URL strony Blix.pl z promocjami
-url = "https://blix.pl/gazetki-promocyjne"
+try:
+    r = requests.get(url, timeout=30)
+    r.raise_for_status()
+    for row in csv.DictReader(r.text.splitlines()):
+        promos.append({
+            "shop":    row["shop"],
+            "product": row["product"],
+            "price":   float(row["price"]),
+            "discount": int(row["discount"])
+        })
+except Exception as e:
+    print("Błąd pobierania CSV:", e)
 
-# Pobierz zawartość strony
-response = requests.get(url)
-soup = BeautifulSoup(response.content, 'html.parser')
-
-# Znajdź elementy z promocjami
-# Przykład selektora: div z klasą "promotion-item"
-promotions = soup.find_all('div', class_='promotion-item')
-
-for promo in promotions:
-    # Przykład selektorów dla produktu, ceny i rabatu
-    product = promo.find('h3').text.strip()
-    price = promo.find('span', class_='price').text.strip()
-    discount = promo.find('span', class_='discount').text.strip()
-
-    # Dodaj promocję do listy
-    promos.append({
-        "shop": "Blix",
-        "product": product,
-        "price": float(price.replace(',', '.').replace(' zł', '')),
-        "discount": int(discount.replace('%', ''))
-    })
-
-# Zapisz promocje do pliku JSON
+# zawsze zapisujemy coś (nawet pustą listę)
 with open("promos.json", "w", encoding="utf-8") as f:
     json.dump(promos, f, ensure_ascii=False, indent=2)
+
+print("Wgrano", len(promos), "promocji")
