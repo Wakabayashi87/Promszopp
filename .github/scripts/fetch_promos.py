@@ -1,31 +1,34 @@
-import requests, json
+import requests
 from bs4 import BeautifulSoup
+import json
 
-url = "https://blix.pl/gazetki-promocyjne"
 promos = []
 
-try:
-    r = requests.get(url, timeout=30)
-    soup = BeautifulSoup(r.text, "html.parser")
+# Adres URL strony Żabka z gazetkami promocyjnymi
+url = "https://www.zabka.pl/gazetka-promocyjna"
 
-    # aktualne selektory Blixa (2024-07-15)
-    offers = soup.select(".offer")  # każda karta promocji
-    for off in offers:
-        title   = off.select_one(".offer-title").get_text(strip=True)
-        price   = off.select_one(".offer-price").get_text(strip=True).replace(" zł", "").replace(",", ".")
-        discount = off.select_one(".offer-discount").get_text(strip=True).replace("-", "").replace("%", "")
-        shop    = off.select_one(".offer-shop").get_text(strip=True)
+# Pobierz zawartość strony
+response = requests.get(url)
+soup = BeautifulSoup(response.content, 'html.parser')
 
-        promos.append({
-            "shop": shop,
-            "product": title,
-            "price": float(price),
-            "discount": int(discount)
-        })
-except Exception as e:
-    print("Scraping Blix – błąd:", e)
+# Znajdź elementy z gazetkami promocyjnymi
+# Przykład selektora: div z klasą "promotion-item"
+promotions = soup.find_all('div', class_='promotion-item')
 
+for promo in promotions:
+    # Przykład selektorów dla produktu, ceny i rabatu
+    gazetka = promo.find('a')['href']
+    title = promo.find('h3').text.strip()
+
+    # Dodaj gazetkę do listy
+    promos.append({
+        "shop": "Żabka",
+        "title": title,
+        "gazetka": gazetka
+    })
+
+# Zapisz gazetki do pliku JSON
 with open("promos.json", "w", encoding="utf-8") as f:
     json.dump(promos, f, ensure_ascii=False, indent=2)
 
-print("Pobrano", len(promos), "promocji z Blix.pl")
+print("Pobrano", len(promos), "gazetek z Żabki")
