@@ -22,7 +22,9 @@
       card.className = 'col-12 col-md-6 col-lg-4';
       card.innerHTML = `
         <div class="card h-100 shadow-sm">
-          <img src="${p.gazetka}" class="card-img-top" alt="${p.title}">
+          <a href="${p.gazetka}" target="_blank">
+            <img src="path/to/default-image.jpg" class="card-img-top" alt="${p.title}">
+          </a>
           <div class="card-body">
             <h5 class="card-title">${p.title}</h5>
           </div>
@@ -35,4 +37,4 @@
     .then(r => r.json())
     .then(data => { promos = data; initApp(); })
     .catch(() => { promos = []; initApp(); });
-                                     </script>
+</script>
