@@ -2,9 +2,9 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
-# Funkcja do pobierania gazetek z Biedronki
-def fetch_biedronka_gazetki():
-    url = "https://www.biedronka.pl"
+# Funkcja do pobierania gazetek z DużeRabaty.pl
+def fetch_gazetki_duzerabaty():
+    url = "https://duzerabaty.pl/gazetki/gazetka-biedronka"
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
     gazetki = []
@@ -17,9 +17,9 @@ def fetch_biedronka_gazetki():
             })
     return gazetki
 
-# Funkcja do pobierania gazetek z Lidl
-def fetch_lidl_gazetki():
-    url = "https://www.lidl.pl"
+# Funkcja do pobierania gazetek z Gazetkolandia.pl
+def fetch_gazetki_gazetkolandia():
+    url = "https://gazetkolandia.pl/lidl"
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
     gazetki = []
@@ -32,8 +32,8 @@ def fetch_lidl_gazetki():
             })
     return gazetki
 
-# Pobierz gazetki z obu sklepów
-promos = fetch_biedronka_gazetki() + fetch_lidl_gazetki()
+# Pobierz gazetki z obu źródeł
+promos = fetch_gazetki_duzerabaty() + fetch_gazetki_gazetkolandia()
 
 # Zapisz gazetki do pliku JSON
 with open("promos.json", "w", encoding="utf-8") as f:
