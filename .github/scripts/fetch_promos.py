@@ -1,6 +1,6 @@
 import json, random, datetime
 
-shops = ["Biedronka","Lidl","Żabka","Aldi","Kaufland","Netto","Dino"]
+# pełna lista 50 produktów
 products = [
     "Mleko UHT 1 l","Czekolada 100 g","Jogurt 400 g","Chleb 500 g","Jajka 10 szt.",
     "Masło 200 g","Pomidory 500 g","Makaron 500 g","Serek wiejski 150 g","Płatki owsiane 500 g",
@@ -16,10 +16,13 @@ products = [
     "Ser gouda 200 g","Pomidory malinowe 500 g","Cukier trzcinowy 1 kg","Przyprawa gyros 50 g","Żel pod prysznic 250 ml"
 ]
 
+shops = ["Biedronka","Lidl","Żabka","Aldi","Kaufland","Netto","Dino"]
+
+# generujemy 50 promocji
 promos = []
 for p in products:
     price = round(random.uniform(1.50, 12.00), 2)
-    discount = -random.randint(15, 45)
+    discount = -random.randint(15, 50)
     promos.append({
         "shop": random.choice(shops),
         "product": p,
@@ -27,6 +30,7 @@ for p in products:
         "discount": discount
     })
 
+# zapis
 with open("promos.json", "w", encoding="utf-8") as f:
     json.dump(promos, f, ensure_ascii=False, indent=2)
 
