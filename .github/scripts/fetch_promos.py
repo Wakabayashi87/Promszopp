@@ -4,24 +4,31 @@ import json
 
 promos = []
 
-# Wybierz odpowiedni URL z powyższych źródeł
-url = "https://www.zabka.pl/gazetka-promocyjna/"
+# Adres URL strony Blix.pl z promocjami
+url = "https://blix.pl/gazetki-promocyjne"
+
+# Pobierz zawartość strony
 response = requests.get(url)
 soup = BeautifulSoup(response.content, 'html.parser')
 
-# Znajdź elementy z promocjami - tutaj trzeba dostosować selektory do struktury strony
-promotions = soup.find_all('div', class_='promotion-item')  # Przykład selektora
+# Znajdź elementy z promocjami
+# Przykład selektora: div z klasą "promotion-item"
+promotions = soup.find_all('div', class_='promotion-item')
+
 for promo in promotions:
-    product = promo.find('h3').text.strip()  # Przykład selektora
-    price = promo.find('span', class_='price').text.strip()  # Przykład selektora
-    discount = promo.find('span', class_='discount').text.strip()  # Przykład selektora
+    # Przykład selektorów dla produktu, ceny i rabatu
+    product = promo.find('h3').text.strip()
+    price = promo.find('span', class_='price').text.strip()
+    discount = promo.find('span', class_='discount').text.strip()
+
+    # Dodaj promocję do listy
     promos.append({
-        "shop": "Żabka",
+        "shop": "Blix",
         "product": product,
         "price": float(price.replace(',', '.').replace(' zł', '')),
         "discount": int(discount.replace('%', ''))
     })
 
-# Zapisz do pliku
+# Zapisz promocje do pliku JSON
 with open("promos.json", "w", encoding="utf-8") as f:
     json.dump(promos, f, ensure_ascii=False, indent=2)
