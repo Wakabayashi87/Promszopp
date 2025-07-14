@@ -1,7 +1,8 @@
 name: Update promos
 on:
-  schedule: [{cron: "0 6 * * *"}]   # 06:00 UTC
-  workflow_dispatch:                # przycisk „Run workflow”
+  schedule: [{cron: "0 6 * * *"}]   # Codziennie o 06:00 UTC
+  workflow_dispatch:                # Ręczne uruchomienie
+
 jobs:
   fetch:
     runs-on: ubuntu-latest
@@ -15,8 +16,10 @@ jobs:
       - name: Run fetch script
         run: python .github/scripts/fetch_promos.py
       - name: Commit & push if changed
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name  'promo-bot'
           git config --global user.email 'bot@example.com'
           git add promos.json
-          git diff --cached --quiet || (git commit -m "auto-update promos" && git push)
+          git diff --cached --quiet || (git commit -m "auto-update promos" && git push origin HEAD:main)
