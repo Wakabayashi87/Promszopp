@@ -77,6 +77,21 @@
   {
     "shop": "Biedronka",
     "title": "",
+    "gazetka": "/gazetka/biedronka-gazetka-wazna-od-21082025-do-27082025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetki/gazetka-biedronka"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "Pokaż całą gazetkę",
+    "gazetka": "/gazetka/biedronka-gazetka-wazna-od-21082025-do-27082025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
     "gazetka": "/gazetka/biedronka-gazetka-hity-i-inspiracje-wazna-od-18082025-do-31082025"
   },
   {
@@ -88,36 +103,6 @@
     "shop": "Biedronka",
     "title": "Pokaż całą gazetkę",
     "gazetka": "/gazetka/biedronka-gazetka-hity-i-inspiracje-wazna-od-18082025-do-31082025"
-  },
-  {
-    "shop": "Biedronka",
-    "title": "",
-    "gazetka": "/gazetka/biedronka-gazetka-wazna-od-18082025-do-20082025"
-  },
-  {
-    "shop": "Biedronka",
-    "title": "",
-    "gazetka": "/gazetki/gazetka-biedronka"
-  },
-  {
-    "shop": "Biedronka",
-    "title": "Pokaż całą gazetkę",
-    "gazetka": "/gazetka/biedronka-gazetka-wazna-od-18082025-do-20082025"
-  },
-  {
-    "shop": "Biedronka",
-    "title": "",
-    "gazetka": "/gazetka/biedronka-gazetka-wazna-od-14082025-do-20082025"
-  },
-  {
-    "shop": "Biedronka",
-    "title": "",
-    "gazetka": "/gazetki/gazetka-biedronka"
-  },
-  {
-    "shop": "Biedronka",
-    "title": "Pokaż całą gazetkę",
-    "gazetka": "/gazetka/biedronka-gazetka-wazna-od-14082025-do-20082025"
   },
   {
     "shop": "Biedronka",
