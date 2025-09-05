@@ -77,6 +77,21 @@
   {
     "shop": "Biedronka",
     "title": "",
+    "gazetka": "/gazetka/biedronka-gazetka-w-tym-tygodniu-wazna-od-04092025-do-10092025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetki/gazetka-biedronka"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "Pokaż całą gazetkę",
+    "gazetka": "/gazetka/biedronka-gazetka-w-tym-tygodniu-wazna-od-04092025-do-10092025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
     "gazetka": "/gazetka/biedronka-gazetka-hity-i-inspiracje-wazna-od-01092025-do-13092025"
   },
   {
@@ -103,21 +118,6 @@
     "shop": "Biedronka",
     "title": "Pokaż całą gazetkę",
     "gazetka": "/gazetka/biedronka-gazetka-wazna-od-01092025-do-06092025"
-  },
-  {
-    "shop": "Biedronka",
-    "title": "",
-    "gazetka": "/gazetka/biedronka-gazetka-wazna-od-28082025-do-03092025"
-  },
-  {
-    "shop": "Biedronka",
-    "title": "",
-    "gazetka": "/gazetki/gazetka-biedronka"
-  },
-  {
-    "shop": "Biedronka",
-    "title": "Pokaż całą gazetkę",
-    "gazetka": "/gazetka/biedronka-gazetka-wazna-od-28082025-do-03092025"
   },
   {
     "shop": "Biedronka",
