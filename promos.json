@@ -77,6 +77,21 @@
   {
     "shop": "Biedronka",
     "title": "",
+    "gazetka": "/gazetka/biedronka-gazetka-wazna-od-23102025-do-29102025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetki/gazetka-biedronka"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "Pokaż całą gazetkę",
+    "gazetka": "/gazetka/biedronka-gazetka-wazna-od-23102025-do-29102025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
     "gazetka": "/gazetka/biedronka-gazetka-czas-na-toast-wazna-od-20102025-do-31102025"
   },
   {
@@ -118,21 +133,6 @@
     "shop": "Biedronka",
     "title": "Pokaż całą gazetkę",
     "gazetka": "/gazetka/biedronka-gazetka-wazna-od-20102025-do-25102025"
-  },
-  {
-    "shop": "Biedronka",
-    "title": "",
-    "gazetka": "/gazetka/biedronka-gazetka-wazna-od-16102025-do-22102025"
-  },
-  {
-    "shop": "Biedronka",
-    "title": "",
-    "gazetka": "/gazetki/gazetka-biedronka"
-  },
-  {
-    "shop": "Biedronka",
-    "title": "Pokaż całą gazetkę",
-    "gazetka": "/gazetka/biedronka-gazetka-wazna-od-16102025-do-22102025"
   },
   {
     "shop": "Biedronka",
