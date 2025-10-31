@@ -77,6 +77,21 @@
   {
     "shop": "Biedronka",
     "title": "",
+    "gazetka": "/gazetka/biedronka-gazetka-wazna-od-29102025-do-05112025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetki/gazetka-biedronka"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "Pokaż całą gazetkę",
+    "gazetka": "/gazetka/biedronka-gazetka-wazna-od-29102025-do-05112025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
     "gazetka": "/gazetka/biedronka-gazetka-wazna-od-27102025-do-31102025"
   },
   {
@@ -103,21 +118,6 @@
     "shop": "Biedronka",
     "title": "Pokaż całą gazetkę",
     "gazetka": "/gazetka/biedronka-gazetka-black-friday-wazna-od-25102025-do-08112025"
-  },
-  {
-    "shop": "Biedronka",
-    "title": "",
-    "gazetka": "/gazetka/biedronka-gazetka-wazna-od-23102025-do-29102025"
-  },
-  {
-    "shop": "Biedronka",
-    "title": "",
-    "gazetka": "/gazetki/gazetka-biedronka"
-  },
-  {
-    "shop": "Biedronka",
-    "title": "Pokaż całą gazetkę",
-    "gazetka": "/gazetka/biedronka-gazetka-wazna-od-23102025-do-29102025"
   },
   {
     "shop": "Biedronka",
