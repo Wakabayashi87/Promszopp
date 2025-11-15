@@ -1,1 +1,257 @@
-[]
+[
+  {
+    "shop": "Biedronka",
+    "title": "Aldi Gazetka",
+    "gazetka": "/gazetki/gazetka-aldi"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "Auchan Gazetka",
+    "gazetka": "/gazetki/gazetka-auchan"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "Biedronka Gazetka",
+    "gazetka": "/gazetki/gazetka-biedronka"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "Carrefour Gazetka",
+    "gazetka": "/gazetki/gazetka-carrefour"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "Dino Gazetka",
+    "gazetka": "/gazetki/gazetka-dino"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "Hebe Gazetka",
+    "gazetka": "/gazetki/gazetka-hebe"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "Jysk Gazetka",
+    "gazetka": "/gazetki/gazetka-jysk"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "Kaufland Gazetka",
+    "gazetka": "/gazetki/gazetka-kaufland"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "Kik Gazetka",
+    "gazetka": "/gazetki/gazetka-kik"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "Lidl Gazetka",
+    "gazetka": "/gazetki/gazetka-lidl"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "Netto Gazetka",
+    "gazetka": "/gazetki/gazetka-netto"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "OBI Gazetka",
+    "gazetka": "/gazetki/gazetka-obi"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "Pepco Gazetka",
+    "gazetka": "/gazetki/gazetka-pepco"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "Rossmann Gazetka",
+    "gazetka": "/gazetki/gazetka-rossmann"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "Tesco Gazetka",
+    "gazetka": "/gazetki/gazetka-tesco"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetka/biedronka-gazetka-wazna-od-13112025-do-19112025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetki/gazetka-biedronka"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "Pokaż całą gazetkę",
+    "gazetka": "/gazetka/biedronka-gazetka-wazna-od-13112025-do-19112025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetka/biedronka-gazetka-hity-i-inspiracje-wazna-od-10112025-do-22112025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetki/gazetka-biedronka"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "Pokaż całą gazetkę",
+    "gazetka": "/gazetka/biedronka-gazetka-hity-i-inspiracje-wazna-od-10112025-do-22112025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetka/biedronka-gazetka-wazna-od-10112025-do-15112025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetki/gazetka-biedronka"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "Pokaż całą gazetkę",
+    "gazetka": "/gazetka/biedronka-gazetka-wazna-od-10112025-do-15112025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetka/biedronka-gazetka-czas-na-toast-wazna-od-03112025-do-15112025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetki/gazetka-biedronka"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "Pokaż całą gazetkę",
+    "gazetka": "/gazetka/biedronka-gazetka-czas-na-toast-wazna-od-03112025-do-15112025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetka/biedronka-hity-i-inspiracje-gazetka-wazna-od-03112025-do-15112025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetki/gazetka-biedronka"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "Pokaż całą gazetkę",
+    "gazetka": "/gazetka/biedronka-hity-i-inspiracje-gazetka-wazna-od-03112025-do-15112025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetka/biedronka-gazetka-home-wazna-od-25052025-do-29062025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetki/gazetka-biedronka"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "Pokaż całą gazetkę",
+    "gazetka": "/gazetka/biedronka-gazetka-home-wazna-od-25052025-do-29062025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetka/biedronka-gazetka-home-wazna-od-27042025-do-01062025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetki/gazetka-biedronka"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "Pokaż całą gazetkę",
+    "gazetka": "/gazetka/biedronka-gazetka-home-wazna-od-27042025-do-01062025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetka/biedronka-gazetka-home-wazna-od-02032025-do-30032025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetki/gazetka-biedronka"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "Pokaż całą gazetkę",
+    "gazetka": "/gazetka/biedronka-gazetka-home-wazna-od-02032025-do-30032025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetka/biedronka-gazetka-home-wazna-od-23022025-do-30032025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetki/gazetka-biedronka"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "Pokaż całą gazetkę",
+    "gazetka": "/gazetka/biedronka-gazetka-home-wazna-od-23022025-do-30032025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetka/biedronka-home-online-gazetka-wazna-od-02122024-do-01012025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetki/gazetka-biedronka"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "Pokaż całą gazetkę",
+    "gazetka": "/gazetka/biedronka-home-online-gazetka-wazna-od-02122024-do-01012025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetka/biedronka-gazetka-kierunek-szkola-wazna-od-29072024-do-31082024"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetki/gazetka-biedronka"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "Pokaż całą gazetkę",
+    "gazetka": "/gazetka/biedronka-gazetka-kierunek-szkola-wazna-od-29072024-do-31082024"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetki/gazetka-biedronka"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetki/gazetka-biedronka"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetki/gazetka-biedronka"
+  }
+]
