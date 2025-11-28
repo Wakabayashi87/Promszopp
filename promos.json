@@ -77,6 +77,21 @@
   {
     "shop": "Biedronka",
     "title": "",
+    "gazetka": "/gazetka/biedronka-gazetka-black-friday-wazna-od-27112025-do-03122025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
+    "gazetka": "/gazetki/gazetka-biedronka"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "Pokaż całą gazetkę",
+    "gazetka": "/gazetka/biedronka-gazetka-black-friday-wazna-od-27112025-do-03122025"
+  },
+  {
+    "shop": "Biedronka",
+    "title": "",
     "gazetka": "/gazetka/biedronka-katalog-gazetka-wazna-od-24112025-do-07122025"
   },
   {
@@ -103,21 +118,6 @@
     "shop": "Biedronka",
     "title": "Pokaż całą gazetkę",
     "gazetka": "/gazetka/biedronka-gazetka-wazna-od-24112025-do-29112025"
-  },
-  {
-    "shop": "Biedronka",
-    "title": "",
-    "gazetka": "/gazetka/biedronka-gazetka-wazna-od-20112025-do-26112025"
-  },
-  {
-    "shop": "Biedronka",
-    "title": "",
-    "gazetka": "/gazetki/gazetka-biedronka"
-  },
-  {
-    "shop": "Biedronka",
-    "title": "Pokaż całą gazetkę",
-    "gazetka": "/gazetka/biedronka-gazetka-wazna-od-20112025-do-26112025"
   },
   {
     "shop": "Biedronka",
